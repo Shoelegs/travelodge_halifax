@@ -1,0 +1,57 @@
+/*
+-----------------------------------------------
+Galaxy IB - Halifax Fonts
+----------------------------------------------- */
+
+/* Agenda Bold
+--------------------------------------- */
+
+@font-face {
+    font-family: 'Agenda_Bold';
+    src: url('../fonts/agendaBold.eot');
+    src: url('../fonts/agendaBold.woff') format('woff'),
+         url('../fonts/agendaBold.ttf') format('truetype'),
+         url('../fonts/agendaBold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Agenda Light
+--------------------------------------- */
+
+@font-face {
+    font-family: 'Agenda_Light';
+    src: url('../fonts/agendaLight.eot');
+    src: url('../fonts/agendaLight.ttf') format('ttf'),
+        url('../fonts/agendaLight.svg') format('svg'),
+        url('../fonts/agendaLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Agenda Medium
+--------------------------------------- */
+
+@font-face {
+    font-family: 'Agenda_Medium';
+    src: url('../fonts/agendaMedium.eot');
+    src: url('../fonts/agendaMedium.svg') format('svg'),
+        url('../fonts/agendaMedium.ttf') format('ttf'),
+        url('../fonts/agendaMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* HelveticaNeue
+--------------------------------------- */
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueW02-85Heavy.eot');
+    src: url('../fonts/HelveticaNeueW02-85Heavy.svg') format('svg'),
+        url('../fonts/HelveticaNeueW02-85Heavy.ttf') format('ttf'),
+        url('../fonts/HelveticaNeueW02-85Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,203 @@
+/*
+-----------------------------------------------
+Galaxy IB - Lloyds TSB CSS: Overlay
+----------------------------------------------- */
+
+/* Overlay
+---------------------------------------*/
+#olMask,
+#olMaskColleagueBar { /* fix for ie */
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	opacity: .5;
+}
+.togglep4pOverlay .olMask {
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+#olMask.dark { /* fix for ie */
+	background: #000;
+	opacity: .75;
+}
+#overlayWrapper {
+	position: fixed;
+	z-index: 2001;
+	left: 50%;
+	top: 50%;
+	width: 1px;
+	height: 1px;
+	margin:  0;
+	padding: 0;
+}
+#overlayWrapper.loaded {
+	position: static;
+	z-index: 1001;
+	left: auto;
+	top: auto;
+	width: auto;
+	height: auto;
+	margin:  0;
+	padding: 0;
+}
+#overlay {
+	position: absolute;
+	z-index: 2001;
+	left: 50%;
+	top: 50%;
+	width: 524px;
+	margin:  -60px 0 0 -253px;
+	padding: 2px;
+	text-align: left;
+	border: 1px solid #C3C4EB;
+	border-radius: 8px;			/* Standard */
+	-moz-border-radius: 8px;	/* Mozilla */
+	-webkit-border-radius: 8px;	/* Webkit */
+	background: #C3C4EB;
+}
+#overlay.overlayWide {
+	width: 700px;
+}
+#overlayCont {
+	padding: 20px;
+	min-height: 100px;
+	border: 1px solid #EBEBF8;
+	border-radius: 5px;			/* Standard */
+	-moz-border-radius: 5px;	/* Mozilla */
+	-webkit-border-radius: 5px;	/* Webkit */
+	background: #EBEBF8;	
+}
+.overlayContInner {
+	padding: 14px;
+}
+.overlayContInner h2 {
+	font-size: 2em;
+	color: #00864F;
+}
+#overlay .spinner {
+	width: 30px;
+	height: 30px;
+	margin: 35px auto 0;
+	background: url(../img/spinner.gif) 0 0 no-repeat;
+}
+#overlay p.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 1px 0 1px 1px;
+	overflow: hidden;
+	border-bottom-left-radius: 5px;			/* Standard */
+	-moz-border-radius-bottomleft: 5px;		/* Mozilla */
+	-webkit-border-bottom-left-radius: 5px; /* Webkit */
+	background: url(../img/icons/overlay_close.png) no-repeat scroll right 2px transparent;
+}
+#overlay p.close a {
+	display: block;
+	padding:1px 22px 0;
+	text-indent: -9999px;
+}
+
+/* Logout warning
+---------------------------------------*/
+.logoutWarning h2 {
+	padding: 0 0 0 36px;
+	margin-bottom: 0.4em;
+	font-size: 3em;
+	color: #1B1D5F;
+	background: url(../img/icons/error.png) 0 9px no-repeat;
+}
+.logoutMsg {
+	padding: 0;
+}
+.logoutWarning ul.actions {
+	margin: 1.3em 0 0;
+	padding-left: 0;
+}
+.logoutWarning ul.actions li a.m-action-button-logout span{
+	display:none;
+}
+/* Select credit card
+---------------------------------------*/
+.selectCreditCard h2 {
+	margin: 0 160px 10px 0;
+	font-size: 1.7em;
+	color: #1b1d5f;
+}
+.selectCreditCard .formField {
+	width: 324px;
+}
+.selectCreditCard fieldset img {
+	float: right;
+	margin: 10px 0 0 30px;
+}
+.selectCreditCard select {
+	width: 290px;
+}
+
+/* M19 branch details overlay
+---------------------------------------*/
+#overlay .branchDetails {
+	border: none;
+}
+.branchDetails .map {
+	float: right;
+}
+.branchDetails .map img {
+	border: 1px solid #C5C5C5;
+}
+.branchDetails .details {
+	float: left;
+	width: 35%;
+}
+.branchDetails .details .adr {
+	margin: 0 0 1.7em;
+}
+.branchDetails .details .adr span {
+	display: block;
+	margin: 0 0 0.2em;
+	font-size: 1.2em;
+}
+.branchDetails .details ul li {
+	margin: 0 0 0.2em;
+	padding-left: 0;
+	background: none;
+}
+.branchDetails .details ul li span {
+	display: block;
+	float: left;
+	width: 6em;
+}
+#overlay ul.actions.branchActions {
+	padding-top: 1em;
+}
+#overlay ul.actions.branchActions li a.print {
+	padding-left: 34px;
+	font-weight: bold;
+	line-height: 2.5em;
+	background:transparent url(../img/icons/print.png) no-repeat scroll 0 4px;
+}
+
+/* Back Link
+---------------------------------------*/
+#overlay ul.actions li.back a {
+	padding: 0 !important;
+	background: none !important;
+}

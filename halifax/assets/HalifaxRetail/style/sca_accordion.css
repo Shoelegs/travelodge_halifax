@@ -1,0 +1,414 @@
+/*
+-----------------------------------------------
+Galaxy IB - BOS CSS: Accordion
+----------------------------------------------- */
+
+/* Accordion (secondary)
+---------------------------------------*/
+.secondary .accordion {
+	margin: 0 0 12px 0;
+}
+
+.secondary .part, .secondary .subPanel{
+	margin-bottom:10px;
+}
+
+.hasJS .secondary .subPanelShadow .subPanel {
+	margin-bottom:0;
+}
+
+.hasJS .secondary .part {
+	margin-bottom:0;
+}
+
+.secondary .accordion .part { /* fix for ie6 */
+	padding: 18px;
+	border: 1px solid #ffffff;
+    background-color: #0040BB;
+}
+.secondary .accordion .partOuter {
+	margin: 0;
+	padding: 0; /* fix for ie */
+	background: #fff;
+}
+
+.secondary .accordion .partOuter .part {
+	margin: 0;
+	padding: 7px;
+	border: 0;
+}
+.secondary .accordion h2 { /* fix for ie6 */
+	position: relative;	
+	margin: 0;
+	padding: 6px 0 0 0;
+	font-size: 22px;
+	font-weight: bold;
+    color: #ffffff;
+    font-family: 'HelveticaNeue',Arial,Helvetica,sans-serif;
+}
+.secondary .accordion h2 a { /* fix for ie */
+	display: block;
+	position: relative; /* give focus outline */
+	padding: 0 32px 0 0;
+	text-decoration: none;
+	color: #ffffff;
+}
+.secondary .accordion .selected h2 {
+	color: #ffffff;
+	padding-top: 6px; 
+}
+.content .tillReceipt.ui-accordion .part .trigger a {
+	padding-left: 20px;
+	text-decoration : none;
+	background: url(../img/icons/chevron-down.png) 0 1px no-repeat;
+}
+.content .accordion h2 .ui-icon {
+	position: absolute;
+	right: 0;
+	left:auto;
+	top: 2px;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/chevron-down.png) 0 0 no-repeat;	
+}
+.secondary .accordion h2 .ui-icon {
+	width: 36px;
+	height: 36px;
+	background: url(../img/icons/chevron-down.png) 0 0 no-repeat;
+}
+.content .accordion h2.ui-state-active .ui-icon {
+	background-image: url(../img/icons/chevron-up.png);	
+}
+.secondary .accordion h2.ui-state-active .ui-icon {
+	background-image: url(../img/icons/chevron-up.png);	
+}
+.secondary .accordion .paneInner { /* fix for ie7 */
+	padding: 10px 0 1px 0;
+	font-size: 14px;
+}
+
+.secondary .accordion ol li {
+	margin-bottom: 0.5em;
+}
+
+/* Contact us
+---------------------------------------*/
+.content .quickContact h3 {
+	margin-bottom: .25em;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.content .quickContact a {
+	color: #ffffff;
+}
+
+/* Quick FAQs
+---------------------------------------*/
+.content ul.quickFAQs {
+	margin-bottom: 1em;
+}
+.content ul.quickFAQs li { /* fix for ie */
+	margin-bottom: .3em;
+	background: transparent;
+	padding-left: 0;
+}
+.content ul.quickFAQs h3 {
+	margin: 0;
+	padding: 0 0 .3em 0;
+	font-size: 1em;
+	color: #ffffff;
+}
+.content ul.quickFAQs.ui-accordion li {
+	padding: 0;
+    list-style: none;
+    margin-left: 0;
+}
+.content ul.quickFAQs.ui-accordion .qfaqCont {
+	padding-left: 22px;
+	height: auto !important;
+}
+.content ul.quickFAQs li .qfaqTrigger,
+.content ul.quickFAQs li .qfaqTrigger a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+}
+.hasJS .content ul.quickFAQs li .qfaqTrigger {
+	cursor:pointer;
+	padding-left: 30px;
+	padding-top: 8px;
+	background: url(../img/icons/chevron-down.png) 0 0 no-repeat;
+}
+.content ul.quickFAQs li .qfaqTrigger.ui-state-active{
+	background: url(../img/icons/chevron-up.png) 0 0 no-repeat;	
+}
+.content ul.quickFAQs.ui-accordion li ul {
+	margin: 0 0 1em;
+}
+.content ul.quickFAQs.ui-accordion li ul li {
+	background: transparent url(../img/bullet.png) no-repeat scroll 9px 0.5em;
+	padding-left: 27px;
+	padding-bottom:5px;
+	position: relative;
+}
+.content .secondary .ui-accordion ol {
+	margin: 0 0 1em 0.45em;
+	padding-left: 22px;
+}
+
+.content .secondary .ui-accordion p {
+	margin-bottom: 0.5em;
+}
+
+.content ul.quickFAQs.ui-accordion li ol li {
+	display: list-item;
+}
+
+/* Primary Accordion
+---------------------------------------*/
+.primary .accordion {
+	margin: 0 14px 1.2em 14px;
+	padding: 0;
+}
+.primary .inner .accordion { 
+	margin-left: 0;
+	margin-right: 0;
+}
+.primary .accordion .part,
+.primary .showHideAccordion .part {
+	margin: 0 0 5px 0;
+	padding: 15px 0 1px 0;
+	background: #f2f4f8;
+}
+
+.primary .accordion .pane,
+.primary .showHideAccordion .pane { /* fix for ie */
+	margin: 0; /* use padding for horizontal measurments for accordion */
+	padding: .4em 8px 10px 30px;
+}
+.primary .accordion h2.trigger,
+.primary .accordion h3.trigger,
+.primary .showHideAccordion h3.trigger,
+.primary .showHideAccordion h4.trigger {
+	margin: 0 10px 15px;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+
+.hasJS .primary .accordion h2.trigger,
+.hasJS .primary .accordion h3.trigger,
+.hasJS .primary .showHideAccordion h3.trigger,
+.hasJS .primary .showHideAccordion h4.trigger {
+	color: #005BA2;
+	padding-left: 20px;
+}
+
+.primary .showHideAccordion h3.trigger,
+.primary .showHideAccordion h4.trigger {
+	font-size: 1.5em;
+}
+.primary .accordion .trigger a {
+	padding-left: 22px;
+	text-decoration: none;
+	color: #fff;
+	background: url(../img/icons/chevron-down.png) 0 1px no-repeat;
+}
+.primary .accordion .trigger.ui-state-active a {
+	background-image: url(../img/icons/chevron-up.png);	
+}
+.primary .showHideAccordion .part h3.trigger,
+.primary .showHideAccordion .part h4.trigger {
+	position: relative;
+}
+.primary .accordion h2 .ui-icon,
+.primary .showHideAccordion .part h3.trigger .ui-icon,
+.primary .showHideAccordion .part h4.trigger .ui-icon {
+	position: absolute;
+	left:0;
+	top: 6px;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons/chevron-down.png) 0 0 no-repeat;	
+}
+.primary .showHideAccordion .part h3.trigger .ui-icon,
+.primary .showHideAccordion .part h4.trigger .ui-icon {
+	top: 2px;
+}
+.primary .showHideAccordion .part.selected h3.trigger .ui-icon,
+.primary .showHideAccordion .part.selected h4.trigger .ui-icon {
+	background-image: url(../img/icons/chevron-down.png);
+}
+ /* retro-fit styling */
+/*
+.primary .accordion .partTop {
+	width: 100%;
+	height: 1px;
+	margin-bottom: -1px;
+}
+.primary .accordion .partTop .tl, .primary .accordion .partTop .tr {
+	width: 5px;
+	height: 5px;
+	margin: -7px 0 0 0;
+}
+.primary .accordion .partTop .tl {
+	float: left;
+	margin-left: -1px;
+	background: #fff url(../img/panels/primary_accordion_panels_sprite.png) 0 0 no-repeat;
+}
+.primary .accordion .selected .partTop .tl {
+	background-position: -24px 0;
+}
+.primary .accordion .partTop .tr {
+	float: right;
+	margin-right: -1px;
+	background: #fff url(../img/panels/primary_accordion_panels_sprite.png) -6px 0 no-repeat;
+}
+.primary .accordion .selected .partTop .tr {
+	background-position: -30px 0;
+}
+.primary .accordion .partBottom {
+	width: 100%;
+	height: 1px;
+	margin-top: -1px;
+}
+.primary .accordion .partBottom .bl, .primary .accordion .partBottom .br {
+	width: 5px;
+	height: 5px;
+	margin: -2px 0 0 0;
+}
+.primary .accordion .partBottom .bl {
+	float: left;
+	margin-left: -1px;
+	background: #fff url(../img/panels/primary_accordion_panels_sprite.png) -12px 0 no-repeat;
+}
+.primary .accordion .selected .partBottom .bl {
+	background-position: -36px 0px;
+}
+.primary .accordion .partBottom .br {
+	float: right;
+	margin-right: -1px;
+	background: #fff url(../img/panels/primary_accordion_panels_sprite.png) -18px 0 no-repeat;
+}
+.primary .accordion .selected .partBottom .br {
+	background-position: -42px 0px;
+}*/
+
+
+/* Primary Accordion (Light)
+---------------------------------------*/
+/*.primary .accordionLight {
+	margin-bottom: 1em;
+	padding: 0;
+}
+.primary .accordionLight .part { /* fix for ie6 -/
+	margin: 0;
+	padding: 1em 14px 1px 14px;
+	background: #fff url(../img/horiz_div.png) 0 0 repeat-x;
+}
+.primary .inner .accordionLight .part {
+	padding-left: 0;
+	padding-right: 0;
+}
+.primary .accordionLight > .part:first-child {
+	background: transparent;
+}
+.primary .accordionLight .part.selected {
+	border-top: 1px solid #002776;
+	border-bottom: 2px solid #002776;
+	background: transparent;
+}
+.primary .accordionLight .part.selected + .part {
+	background: transparent;
+}
+.primary .accordionLight .pane {
+	margin: 0; /* use padding for horizontal measurments for accordion -/
+	padding: 1px 0 0 22px;
+}
+.primary .accordionLight h2.trigger, .primary .accordionLight h3.trigger {
+	margin: 0 0 .7em 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #505050;
+}
+.primary .accordionLight .trigger a {
+	padding-left: 22px;
+	text-decoration: none;
+	color: #505050;
+	background: url(../img/icons/plus.png) 0 1px no-repeat;
+}
+.primary .accordionLight .trigger.ui-state-active a {
+	background-image: url(../img/icons/minus.png);	
+}*/
+.primary .accordion h2 {
+	position: relative; 
+}
+/* Help info
+---------------------------------------*/
+.content .helpInfo {
+	display: block;
+}
+.content .helpInfo:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+}
+
+.content .helpInfo h3 {
+	margin: 0 0 .5em 0;
+	font-size: 1.4em;
+	color: #005BA2;
+}
+.content .helpInfo .helpInfoItem {
+	float: left;
+	width: 47%;
+}
+.content .helpInfo .helpInfoItem + .helpInfoItem {
+	float: right;
+}
+
+.content .helpInfo .linkBullet {
+	margin-left: 0;
+}
+
+/* Show/Hide Accordion
+---------------------------------------*/
+.showHideAccordion {
+	margin-bottom: 1em;
+}
+.showHideAccordion .part { /* fix for ie */
+	padding: 0;
+	margin-bottom: .3em;
+	background: transparent;
+}
+.showHideAccordion .trigger a {
+	font-weight:normal;
+	text-decoration: none;
+	color: #005BA2;
+}
+
+.enterActivationCode .accordion h2 .ui-icon {
+    left:auto;
+    top: 0;
+    width: 35px;
+    height: 30px;
+    background: url(../img/icons/chevron-down.png) no-repeat 92% center;
+    background-size: 26px 26px;
+}
+
+.enterActivationCode .accordion h2.ui-state-active .ui-icon {
+    background: url(../img/icons/chevron-up.png) no-repeat 92% center;
+    background-size: 26px 26px;		
+}
+
+.enterActivationCode h2.trigger.linkPointer.hasLink.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all {
+    margin-left: 0;
+    padding-left: 0;
+}	
+.enterActivationCode h2.trigger.linkPointer.hasLink.ui-accordion-header.ui-helper-reset.ui-state-active.ui-corner-top {
+    margin-left: 0;
+    padding-left: 0;
+}
